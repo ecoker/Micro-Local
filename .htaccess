@@ -1,4 +1,6 @@
 RewriteEngine On
 RewriteBase /
+
 RewriteRule ^(scripts|css|common|productimages|flashproductimages|images|akamai)/(.*)$    http://www.naturalizer.com/$1/$2 [NC]
+RewriteRule .*.aspx index.php [L]
 ErrorDocument 404 /index.php
